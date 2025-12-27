@@ -45,4 +45,4 @@ It focuses on overall business performance, product contribution, and regional t
 > ⚠️ Note: Target values are simplified for learning and demonstration purposes.
 
 ## 📸 Dashboard Preview
-![Executive Summary]
+![Executive Summary] (mini-project/05_sales_performance_dashboard/powerbi/Sales Dashboard_Financial.pbix)
