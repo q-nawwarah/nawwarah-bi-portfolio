@@ -1,4 +1,4 @@
--- Core Measures
+## Core Measures
 Total Sales =
 SUM ( Financials[Sales] )
 
@@ -8,7 +8,7 @@ SUM ( Financials[Profit] )
 Total Sales Target =
 SUM ( Target[Target] )
 
--- Performance Measures
+## Performance Measures
 Sales Variance =
 [Total Sales] - [Total Sales Target]
 
@@ -18,6 +18,6 @@ DIVIDE ( [Sales Variance], [Total Sales Target] )
 Sales Achievement % =
 DIVIDE ( [Total Sales], [Total Sales Target] )
 
--- Profitability
+## Profitability
 Profit Margin % =
 DIVIDE ( [Total Profit], [Total Sales] )
