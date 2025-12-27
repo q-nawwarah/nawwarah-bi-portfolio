@@ -31,7 +31,7 @@ Create an executive KPI dashboard showing **Revenue vs Target**, Profit, Margin,
 (See `docs/dax-formulas.md` for full measure definitions.)
 
 ## 📸 Output Screenshot
-- `output_screenshot/dashboard_screenshot.png` — full dashboard overview
+- (Dashboard Sales vs Target.png) — full dashboard overview
 
 ## 🧠 Key Insights (not update yet)
 - Revenue exceeded target in 7 of 12 months, with strong performance in October and December.
