@@ -13,6 +13,12 @@ DESCRIPTION: This script covers data cleaning, wave analysis, and vaccination im
 -- 5. Missing data check
 -- 6. Monthly summary
 -- 7. Peak cases
+-- 8. Death rate
+-- 9. Regional comparison
+-- 10. High risk periods
+-- 11. Pre-post vaccination
+-- 12. Cases to death lag
+-- 13. Export clean data
 -- =================================================================
 
 -- 01_quick_sanity_check.sql
@@ -102,7 +108,44 @@ WHERE location IN ('Malaysia', 'Singapore', 'Indonesia', 'Thailand')
 GROUP BY location
 ORDER BY VaccinationRate DESC;
 
--- 10_export_clean_data.sql
+-- 10_high_risk_periods.sql
+SELECT
+  date,
+  new_cases,
+  new_deaths,
+  AVG(new_cases) OVER (ORDER BY date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS cases_7dma,
+  SAFE_DIVIDE(total_deaths, total_cases) * 100 AS cfr,
+  CASE
+    WHEN new_cases > 20000 AND SAFE_DIVIDE(total_deaths, total_cases) * 100 > 1.0
+    THEN 'High Risk'
+    ELSE 'Normal'
+  END AS risk_level
+FROM `practice-project-2025-9898.covid_19.covid19_data`
+WHERE location = 'Malaysia'
+ORDER BY date;
+
+-- 11_pre_post_vaccination.sql
+SELECT
+  CASE
+    WHEN date < '2021-02-24' THEN 'Pre-PICK'
+    ELSE 'Post-PICK'
+  END AS period,
+  AVG(SAFE_DIVIDE(total_deaths, total_cases) * 100) AS avg_cfr,
+  AVG(new_cases) AS avg_daily_cases
+FROM `practice-project-2025-9898.covid_19.covid19_data`
+WHERE location = 'Malaysia'
+GROUP BY period;
+
+-- 12_cases_to_death_lag.sql
+SELECT
+  date,
+  new_cases,
+  LEAD(new_deaths, 14) OVER (ORDER BY date) AS deaths_14_days_later
+FROM `practice-project-2025-9898.covid_19.covid19_data`
+WHERE location = 'Malaysia'
+ORDER BY date;
+
+-- 13_export_clean_data.sql
 -- Purpose: Prepare cleaned and aggregated data for Power BI visualization
 SELECT
   date,
