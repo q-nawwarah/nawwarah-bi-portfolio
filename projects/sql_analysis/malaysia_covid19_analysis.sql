@@ -148,12 +148,15 @@ ORDER BY date;
 -- Purpose: Prepare cleaned and aggregated data for Power BI visualization
 SELECT
   date,
-  new_cases AS daily_new_cases,
-  total_cases AS cumulative_cases,
-  new_deaths AS daily_deaths,
-  SAFE_DIVIDE(total_deaths, total_cases) * 100 AS death_rate_percent
+  population,
+  new_cases,
+  new_deaths,
+  total_cases,
+  total_deaths,
+  people_fully_vaccinated,
+  SAFE_DIVIDE(people_fully_vaccinated, population) * 100 AS vaccination_rate_percent,
+  SAFE_DIVIDE(total_deaths, total_cases) * 100 AS cumulative_cfr_percent
 FROM
-  `practice-project-2025-9898.covid_19.covid19_data`
+  `practice-project-2025-9898.covid_19.covid19_data` 
 WHERE location = 'Malaysia'
-AND new_cases IS NOT NULL
 ORDER BY date;
