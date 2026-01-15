@@ -11,11 +11,12 @@ This project demonstrates a complete **ETL (Extract, Transform, Load)** pipeline
 ## 🛠️ Technical Stack
 
 * **Language:** Python 3.x
-* **Libraries:** * `Pandas`: Data manipulation and structural cleaning.
+* **Libraries:**
+* `Pandas`: Data manipulation and structural cleaning.
 * `Matplotlib`: Exploratory visual analysis.
 
 
-* **Source Data:** [View Financial 2014 raw] (python_data_cleaning/dataset_financial2014_raw.xlsx)
+**Source Data:** [View Financial 2014 raw] (python_data_cleaning/dataset_financial2014_raw.xlsx)
 
 ---
 
