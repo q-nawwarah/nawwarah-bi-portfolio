@@ -46,9 +46,12 @@ This project simulates how a Business Intelligence dashboard could be used to:
 ## 2. Key Insights (Results)
 ### Case Trends & System Pressure
 Malaysia’s daily COVID-19 cases peaked in August 2021, representing the period of maximum healthcare system pressure.
+
 <img width="368" height="67" alt="Screenshot 2026-01-15 131640" src="https://github.com/user-attachments/assets/b32312f8-e9d2-4d00-a806-a6a2064effdb" />
+
 - Total new cases by date:
 <img width="1445" height="293" alt="Screenshot 2026-01-15 131146" src="https://github.com/user-attachments/assets/f96feee1-817b-4138-a982-33efadf096b1" />
+
 
 ### Case Fatality Rate (CFR) Evolution
 CFR exhibited a sustained downward trend from mid-2020 into early-2021. Notably, during the Delta wave — despite record infection levels — CFR remained substantially lower than during the early pandemic phase.
