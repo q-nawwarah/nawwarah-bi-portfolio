@@ -1,8 +1,7 @@
-/* PROJECT: Malaysia COVID-19 Resilience Analysis
-TOOLS: Google BigQuery (Standard SQL)
-AUTHOR: Nawwarah Yusof
-DESCRIPTION: This script covers data cleaning, wave analysis, and vaccination impact.
-*/
+# PROJECT: Malaysia COVID-19 Resilience Analysis
+# TOOLS: Google BigQuery (Standard SQL)
+# AUTHOR: Nawwarah Yusof
+# DESCRIPTION: This script covers data cleaning, wave analysis, and vaccination impact.
 
 -- =================================================================
 -- TABLE OF CONTENTS
