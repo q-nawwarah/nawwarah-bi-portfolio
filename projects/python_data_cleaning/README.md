@@ -27,8 +27,7 @@ To provide value beyond basic numbers, the following metrics were engineered:
 1. **Sales Volume:** Total revenue generated across global markets.
 2. **Profitability Analysis:** Identification of net profit after COGS and discounts.
 3. **Profit Margin (%):** Efficiency metric calculated as:
-
-
+         `Profit margin = net profit/total sales`
 4. **Seasonality Trends:** Monthly performance tracking to identify Q4 peaks.
 
 ---
