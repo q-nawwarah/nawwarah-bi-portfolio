@@ -43,7 +43,7 @@ This project simulates how a Business Intelligence dashboard could be used to:
 - Assess how outcomes evolved before and after national vaccination rollout
 - Detect early warning signals for future public health emergencies
 
-## 2. Key Insights (Results)
+## Key Insights (Results)
 ### Case Trends & System Pressure
 Malaysia’s daily COVID-19 cases peaked in August 2021, representing the period of maximum healthcare system pressure.
 
@@ -84,8 +84,8 @@ This lag represents a critical planning window for:
 Malaysia’s peak COVID-19 vaccination coverage in 2021 exceeded Indonesia by approximately 250% and Thailand by over 400%, highlighting a significantly higher level of population protection. `(09_regional_comparison.sql)`.
 <img width="1446" height="566" alt="Screenshot 2026-01-15 132852" src="https://github.com/user-attachments/assets/6dad1aba-0fc6-45e7-bbfe-f45e53553f49" />
 
-### Technical Implementation (Action)
-#### Data Architecture
+## Technical Implementation (Action)
+### Data Architecture
 - Built a modular SQL pipeline (13 scripts) in Google BigQuery
 - Scripts cover:
   - Data validation and integrity checks
@@ -96,19 +96,19 @@ Malaysia’s peak COVID-19 vaccination coverage in 2021 exceeded Indonesia by ap
   - Infection-to-death lag analysis
   - BI-ready data exports
 
-#### Advanced SQL Techniques
+### Advanced SQL Techniques
 - Window Functions (AVG() OVER, LEAD())
 - Safe arithmetic handling (SAFE_DIVIDE, NULLIF)
 - Modular, reusable query design aligned with BI workflows
 
-#### BI Visualization
+### BI Visualization
 - SQL outputs connected directly to Power BI
 - Dashboards designed for:
   - Trend monitoring
   - Risk period detection
   - Executive-level decision support
 
-### Strategic Recommendations
+## Strategic Recommendations
 Based on the analytical findings, the following actions are recommended:
 - Healthcare Capacity Planning
   - Maintain a “Warm-Base” ICU capacity capable of scaling by ~20% within 14 days
@@ -118,11 +118,11 @@ Based on the analytical findings, the following actions are recommended:
   - Prioritize booster deployment in regions where the infection-to-death lag is shortest
   - Use lag-based indicators as early warning signals rather than relying solely on case counts
 
-### Data Source & Limitations
+## Data Source & Limitations
 - Data Source
   - Our World in Data (OWID) COVID-19 Dataset (2020–2021)
 
-### Key Limitations
+## Key Limitations
 - Global Aggregation Bias
   - OWID aggregates multiple sources and may not reflect real-time national reporting nuances.
 
@@ -132,7 +132,7 @@ Based on the analytical findings, the following actions are recommended:
 - Testing Policy Effects
   - Changes in testing strategies over time affect reported case numbers.
 
-### Future Enhancements
+## Future Enhancements
 - Migrate SQL pipeline to Malaysia Ministry of Health (KKMNow) datasets
 - Enable state-level and hospital-level analysis
 - Integrate ICU utilization and admission metrics
