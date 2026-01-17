@@ -12,7 +12,7 @@ SQL (Google BigQuery), Power BI
 - A consistent ~14-day infection-to-death lag provides early warning for capacity planning
 
 **Business Value:**  
-Demonstrates how BI can support ICU capacity planning, vaccination prioritization, and early risk detection during public health crises.
+Demonstrates how BI supports ICU capacity planning via lag-time forecasting, validates vaccination prioritization through CFR decoupling, and enables early risk detection using leading infection indicators.
 
 # 🇲🇾 Malaysia COVID-19: Risk & Resilience Analysis
 
@@ -136,3 +136,9 @@ Based on the analytical findings, the following actions are recommended:
 - Migrate SQL pipeline to Malaysia Ministry of Health (KKMNow) datasets
 - Enable state-level and hospital-level analysis
 - Integrate ICU utilization and admission metrics
+
+## Business Impact & Stakeholder Value
+This project was designed for **Public Health Decision-Makers** and **Hospital Administrators**.
+- **For Government:** Provides a "Resilience Score" by correlating vaccination rollout with the reduction in Case Fatality Rate (CFR).
+- **For Healthcare Providers:** Establishes a 14-day "Early Warning System" based on the established lag between infection spikes and mortality peaks.
+- **For the Public:** Translates complex BigQuery datasets into a transparent narrative of national recovery.
