@@ -148,15 +148,21 @@ ORDER BY date;
 -- Purpose: Prepare cleaned and aggregated data for Power BI visualization
 SELECT
   date,
+  location,
   population,
   new_cases,
-  new_deaths,
   total_cases,
+  new_deaths,
   total_deaths,
   people_fully_vaccinated,
-  SAFE_DIVIDE(people_fully_vaccinated, population) * 100 AS vaccination_rate_percent,
-  SAFE_DIVIDE(total_deaths, total_cases) * 100 AS cumulative_cfr_percent
+  people_fully_vaccinated_per_hundred AS vaccine_coverage_pct,
+  SAFE_DIVIDE(new_deaths, new_cases) * 100 AS daily_cfr_pct,
+  SAFE_DIVIDE(total_deaths, total_cases) * 100 AS cumulative_cfr_pct,
+  new_vaccinations_smoothed AS daily_vaccination_velocity
 FROM
-  `practice-project-2025-9898.covid_19.covid19_data` 
-WHERE location = 'Malaysia'
-ORDER BY date;
+  `practice-project-2025-9898.covid_19.covid19_data`
+WHERE 
+  location = 'Malaysia'
+  AND date >= '2020-01-01'
+ORDER BY 
+  date ASC;
