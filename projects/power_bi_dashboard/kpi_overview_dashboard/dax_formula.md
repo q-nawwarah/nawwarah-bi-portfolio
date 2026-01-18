@@ -10,9 +10,9 @@ In this document, all DAX formula that had been used in this Project will be lis
 
 ### **Total Sales**
 ```DAX
-Total Revenue = SUM('Financials'[Sales])
+Total Sales = SUM('Financials'[Sales])
 
-### **Total Profit** 
+### Total Sales & Profit
 ```DAX
 Total Profit = [Total Sales] - [Total Cost]
 
