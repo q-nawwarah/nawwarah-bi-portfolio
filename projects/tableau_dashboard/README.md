@@ -33,7 +33,7 @@ The data was cleaned and prepared in BigQuery before being connected to Tableau.
 - **GitHub** – Documentation & project showcase
 
 ## 📷 Screenshot
-![Sales Dashboard Screenshot](Screenshot-dashboard.png)
+![Sales Dashboard Screenshot](dashboard_screenshot.png)
 
 ---
 
