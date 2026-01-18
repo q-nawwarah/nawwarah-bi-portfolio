@@ -1,38 +1,38 @@
-# 📘 DAX Formulas – KPI Dashboard (Financial Sample 2014)
-_Last updated: November 2025_
+# DAX Formulas – KPI Overview Dashboard (Financial Sample 2014)
+_Last updated: January 2026_
 
-In this document, all DAX formula that had been used in this Mini Project will be listed:
-**KPI Dashboard – Revenue vs Target**.
+In this document, all DAX formula that had been used in this Project will be listed:
+**KPI Overview Dashboard**.
 
 ---
 
-## 🧩 1. Sales & Profit Measures
+## 1. Sales & Profit Measures
 
-### **Total Revenue**
+### **Total Sales**
 ```DAX
 Total Revenue = SUM('Financials'[Sales])
 
-### **Total Profit**
+### **Total Profit** 
 ```DAX
-Total Profit = SUM('Financials'[Profit])
+Total Profit = [Total Sales] - [Total Cost]
 
 ### **Profit Margin %**
 ```DAX
 Profit Margin % =
-DIVIDE([Total Profit], [Total Sales])
+DIVIDE([Total Profit], [Total Sales],0)
 
-## 🧩 2. Target Measure
+## 2. Target Measure
 
-### **Total Target**
+### **Target Sales**
 ```DAX
-Total Target = SUM('Targets'[Target Sales])
+Target Sales = 
+CALCULATE(
+    SUM(Targets_2014[Target]),
+    TREATAS(
+        VALUES('Date Table'[Month]),
+        Targets_2014[Month]))
 
-### **Total Target**
-```DAX
-Sales Achievement % =
-DIVIDE([Total Sales], [Total Target])
-
-## 🧩 3. Variance Measure
+## 3. Variance Measure
 
 ### **Sales Variance**
 ```DAX
@@ -43,7 +43,7 @@ Sales Variance = [Total Sales] - [Total Target]
 Revenue Variance % =
 DIVIDE([Sales Variance], [Total Target])
 
-## 🧩 4. Month-to-Month (MoM) Measure
+## 4. Month-to-Month (MoM) Measure
 (Only function if visual is filter by month/date)
 
 ### **Revenue Prev Month**
