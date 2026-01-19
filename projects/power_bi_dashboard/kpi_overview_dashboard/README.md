@@ -1,52 +1,54 @@
-# 📊 KPI Dashboard — Financial Sample (2014)
+# 📊 Sales KPI Overview Dashboard — 2014
 
 ## 👀 Recruiter Snapshot (30‑second read)
 
-**What this shows**
-An executive‑ready **Power BI KPI dashboard** analyzing **2014 sales performance vs monthly targets**, profitability, margin health, and month‑over‑month trends.
+**What this is**
+An executive‑style **Power BI Sales KPI dashboard** evaluating **2014 revenue performance against realistic monthly targets**, profit trends, and margin health.
 
-**Why it matters**
-Demonstrates strong **data modeling, DAX problem‑solving, and business insight validation**, including resolving a real‑world target‑vs‑actual modeling issue.
+**Why it stands out**
+Showcases strong **BI fundamentals and problem‑solving** — including correct target granularity, Date modeling, and validated Sales vs Target analysis.
 
-**Skills proven**
-Power BI • DAX (KPIs, time intelligence, TREATAS) • Data modeling • Executive dashboards • BI troubleshooting
+**Skills demonstrated**
+Power BI • DAX (KPIs & time intelligence) • Data modeling • Sales performance analysis • Executive storytelling
 
 **Outcome**
-Clear visibility into revenue over‑performance, seasonal trends, and margin behavior to support faster, data‑driven management decisions.
+Provides clear visibility into monthly over‑ and under‑performance, seasonal trends, and country‑level revenue contribution to support data‑driven decisions.
 
 ---
 
 ## 🔍 Project Overview
 
-This project delivers an **executive‑level KPI dashboard** built in **Power BI**, designed to evaluate:
+This project presents a **Sales KPI Overview Dashboard** built in **Power BI** to help stakeholders monitor **financial performance across 2014**.
 
-* Revenue vs **monthly targets**
-* Profit and Profit Margin trends
-* Month‑over‑Month (MoM) growth
-* Country‑level sales contribution
+The dashboard focuses on:
 
-The dashboard is built using a **What → So What → Now What** storytelling approach, ensuring insights are actionable rather than purely descriptive.
+* Actual revenue vs **monthly targets**
+* Profit and profit margin trends
+* Month‑over‑Month (MoM) movement
+* Sales contribution by country
+
+The design follows a **What → So What → Now What** framework to ensure insights are actionable.
 
 ---
 
 ## 🎯 Objective
 
-To create a **decision‑ready financial performance dashboard** that allows stakeholders to:
+To build a **decision‑ready sales performance dashboard** that allows business users to:
 
-* Quickly assess whether revenue targets are being met
-* Identify high‑performing months and markets
-* Monitor margin health across the year
-* Detect seasonal and mid‑year performance patterns
+* Track whether monthly revenue targets are achieved
+* Identify periods of under‑performance early
+* Understand profitability trends across the year
+* Compare performance across key markets
 
 ---
 
 ## 📁 Dataset
 
-**Financial_Sample_2014.xlsx**
-Cleaned transactional sales data for 2014.
+**financial_dataset.xlsx**
+Transactional sales data for 2014, cleaned and standardized.
 
-**Revenue_Targets.xlsx**
-Monthly revenue targets defined at a **calendar‑month grain**.
+**financial_target_dataset.xlsx**
+Monthly revenue targets reflecting expected seasonal variation.
 
 📂 Stored in the `/data/` directory.
 
@@ -60,18 +62,18 @@ Monthly revenue targets defined at a **calendar‑month grain**.
 
 **Dimension Table**
 
-* `Date` — Calendar table for 2014 (with Period = YYYY‑MM)
+* `Date` — Calendar table (Year, Month)
 
 **Target Table**
 
-* `Targets_2014` — Monthly revenue targets
+* `Targets_2014` — Monthly sales targets
 
 **Relationships**
 
 * `Date[Date]` → `Financials[Date]` (1 → many)
 * `Targets_2014[Period]` → `Date[Period]` (many → 1)
 
-📌 *Due to Power BI relationship direction constraints, monthly targets are aligned to the Date dimension using DAX rather than relying solely on physical relationships.*
+📌 Monthly targets are aligned to the Date dimension using DAX to ensure accurate Sales vs Target comparison.
 
 ---
 
@@ -80,17 +82,17 @@ Monthly revenue targets defined at a **calendar‑month grain**.
 * **Power BI Desktop**
 
   * Power Query (data cleaning & transformation)
-  * Data modeling (date table & relationships)
+  * Data modeling & relationships
 * **DAX**
 
   * KPI measures
-  * Time intelligence
-  * Target alignment using `TREATAS`
+  * Time intelligence (MoM)
+  * Sales vs Target & variance calculations
 * **Business Intelligence**
 
   * KPI framework design
-  * Executive storytelling
-  * Data validation & debugging
+  * Data validation
+  * Executive‑level reporting
 
 ---
 
@@ -102,11 +104,10 @@ Monthly revenue targets defined at a **calendar‑month grain**.
 * Target Sales (monthly)
 * Sales Variance
 * Sales Variance %
-* Revenue (Previous Month)
+* Previous Month Revenue
 * MoM Growth %
 
-📄 Full DAX definitions available in:
-`/docs/dax-formulas.md`
+📄 Full DAX definitions available in `/docs/dax-formulas.md`
 
 ---
 
@@ -120,57 +121,57 @@ Monthly revenue targets defined at a **calendar‑month grain**.
 
 **Key Visuals**
 
-* Monthly **Sales vs Target** (dynamic target line by month)
-* Profit trend analysis across the year
-* Sales contribution by country
-* Tabular variance breakdown for executive review
+* Monthly **Sales vs Target** (dynamic target line)
+* Profit trend line showing volatility and peaks
+* Sales by country (United States, Canada, France, Germany)
+* Detailed variance table highlighting over‑ and under‑performance
 
 📸 Dashboard Screenshot
 
-![Sales KPI Dashboard](dashboard_screenshot.png)
+![Sales KPI Overview Dashboard](.png)
 
 ---
 
 ## 🧠 Key Insights
 
-* Revenue **exceeded monthly targets in all 12 months** of 2014, with the strongest over‑performance in **October and December**, indicating pronounced Q4 seasonality.
-* Profit remained resilient throughout the year, averaging **~14.1%**, despite sales volatility.
-* Mid‑year months (July–September) show softer performance relative to Q4 peaks, suggesting potential pricing or demand‑mix effects.
+* Revenue performance varied across the year, with **both over‑ and under‑target months**, providing a more realistic view of execution against plan.
+* Strong sales peaks occurred in **June, October, and December**, indicating seasonal demand patterns.
+* Several mid‑year months underperformed targets, highlighting potential pricing, demand, or discounting challenges.
+* Profit margin averaged **~14.1%**, remaining stable despite revenue volatility.
 
 ---
 
 ## 💼 Business Value
 
-This dashboard delivers **direct decision‑making value** for leadership and commercial teams:
+This dashboard supports management and sales leadership by:
 
-* **Accurate target accountability**
-  Monthly targets are correctly aligned with actuals, ensuring trustworthy Sales vs Target evaluation.
+* **Improving target accountability**
+  Clear month‑level comparison between actuals and targets highlights execution gaps.
 
-* **Faster executive reporting**
-  Replaces static spreadsheets with a single, interactive KPI view for monthly performance reviews.
+* **Enabling faster performance reviews**
+  Replaces manual spreadsheets with a single interactive KPI view.
 
-* **Early performance detection**
-  MoM tracking highlights slowdowns or accelerations early, enabling proactive action.
+* **Identifying risk periods early**
+  Under‑target months are immediately visible, enabling corrective action.
 
-* **Margin protection**
-  Profit and margin visibility helps identify periods of potential discount pressure.
+* **Supporting margin awareness**
+  Profit and margin trends help balance growth with profitability.
 
-* **Scalable BI foundation**
-  Reusable data model and measures allow easy extension to YoY analysis or future periods.
+* **Providing a scalable BI foundation**
+  The model can be extended to YoY analysis, additional regions, or future targets.
 
 ---
 
 ## 📌 Business Recommendations
 
-* Introduce **seasonal or stretch targets** to better reflect Q4 demand spikes.
-* Review discount and pricing strategies during mid‑year months to protect margins.
-* Prioritize high‑performing markets (United States & Canada) for growth initiatives.
+* Refine forecasting assumptions for mid‑year months where targets were missed.
+* Use seasonal insights to set differentiated targets rather than flat growth expectations.
+* Focus growth initiatives on consistently strong markets such as the **United States and Canada**.
 
 ---
-
 ## 👤 Author
 
 **Nawwarah Yusof**
 Data Analyst | Power BI & Business Intelligence
 
-📌 *This project demonstrates end‑to‑end BI development, from data modeling and DAX troubleshooting to executive‑ready storytelling.*
+📌 *This project demonstrates end‑to‑end BI development — from data modeling and KPI design to executive‑ready insights.*
