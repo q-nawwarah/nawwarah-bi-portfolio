@@ -128,7 +128,7 @@ Monthly revenue targets reflecting expected seasonal variation.
 
 📸 Dashboard Screenshot
 
-![Sales KPI Overview Dashboard](.png)
+![Sales KPI Overview Dashboard](dashboard_screenshot.png)
 
 ---
 
