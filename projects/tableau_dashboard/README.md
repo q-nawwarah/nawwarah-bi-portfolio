@@ -1,43 +1,108 @@
 # Sales Overview Dashboard (Tableau)
 
-## Overview
-This Tableau dashboard visualizes Superstore’s 2014–2017 sales performance, focusing on total orders, sales, profit, product performance, and regional trends.  
-The data was cleaned and prepared in BigQuery before being connected to Tableau.
+## 👀 Recruiter Snapshot (30-Second Read)
 
-##  Storytelling Narrative
-- **Total Sales** and **Total Profit** show steady growth across the timeline, mainly driven by the *Technology* category.
-- **Average Order Value (AOV)** remains consistent, suggesting stable customer spending.
-- **West Region** dominates both sales and profit, while other regions show moderate performance.
-- **Top 10 Products** contribute a significant portion of total revenue, highlighting product concentration opportunities.
-- **Monthly Sales Trend** reveals a cyclical pattern with peaks during mid-year and end-of-year months.
-- Overall, the business demonstrates strong performance and growth potential in technology-related segments.
+**What this project shows**  
+An interactive **Tableau dashboard** analyzing Superstore’s sales performance (2014–2017), built on data prepared in **Google BigQuery**.
 
-##  Key Metrics
-| Metric | Description | Calculation |
-|--------|-------------|--------------|
-| Total Orders | Number of unique orders | COUNTD([Order ID]) |
-| Total Sales | Total revenue | SUM([Sales]) |
-| Average Order Value | Sales per order | SUM([Sales]) / COUNTD([Order ID]) |
-| Total Profit | Total profit after cost | SUM([Profit]) |
-| MoM % Change | Month-over-month change in sales | Calculated using LOD + DATEADD formula |
+**What I did**
+- Prepared and validated sales data in BigQuery  
+- Designed KPI-driven visualizations in Tableau  
+- Analyzed sales, profit, order volume, and regional performance  
+- Identified product concentration and seasonal trends  
+- Applied business storytelling to translate data into insights  
 
-## Visualizations Included
-1. KPI Cards – Total Sales, Orders, AOV, Profit, MoM%
-2. Sales by Month (Trend Line)
-3. Sales by Product (Top 10)
-4. Sales by Region (Map / Bar Chart)
+**Why it matters**  
+This project demonstrates the ability to **turn structured data into executive-level insights**, supporting decisions around product focus, regional strategy, and revenue growth.
 
-## Tools Used
-- **Google BigQuery** – Data storage & preprocessing  
-- **Tableau Public** – Data visualization & dashboard creation  
-- **GitHub** – Documentation & project showcase
-
-## Screenshot
-![Sales Dashboard Screenshot](dashboard_screenshot.png)
+**Tools**  
+Google BigQuery | Tableau Public | GitHub
 
 ---
 
-### Insights Summary
-Overall, Superstore’s performance indicates strong growth potential, especially in the Technology category and West region.  
-Future strategies can focus on expanding high-margin products and optimizing discount strategies to sustain profit growth.
+## 📌 Project Overview
 
+This Tableau dashboard provides a comprehensive view of **Superstore’s sales performance from 2014 to 2017**, focusing on revenue, profit, order behavior, product performance, and regional trends.
+
+The dataset was **cleaned and prepared in Google BigQuery**, then connected directly to Tableau for visualization and analysis.
+
+---
+
+## 📖 Business Storytelling (What → So What → Now What)
+
+**What**
+- Total Sales and Total Profit show steady growth over time
+- Technology is the primary driver of revenue and profit
+- The West region consistently outperforms other regions
+
+**So What**
+- Stable Average Order Value (AOV) suggests consistent customer spending behavior
+- Revenue concentration in Top 10 Products highlights both opportunity and risk
+- Seasonal patterns indicate predictable demand cycles
+
+**Now What**
+- Double down on high-performing Technology products
+- Expand successful strategies from the West region to other regions
+- Review product concentration and discount strategies to sustain profit growth
+
+---
+
+## 📊 Key Metrics
+
+| Metric | Description | Calculation |
+|------|------------|------------|
+| Total Orders | Number of unique orders | `COUNTD([Order ID])` |
+| Total Sales | Total revenue | `SUM([Sales])` |
+| Average Order Value (AOV) | Sales per order | `SUM([Sales]) / COUNTD([Order ID])` |
+| Total Profit | Net profit after cost | `SUM([Profit])` |
+| MoM % Change | Month-over-month sales growth | LOD + `DATEADD()` |
+
+---
+
+## 📈 Visualizations Included
+
+- **KPI Cards** – Total Sales, Orders, AOV, Profit, MoM %  
+- **Monthly Sales Trend** – Time-series line chart  
+- **Top 10 Products by Sales** – Product performance analysis  
+- **Sales by Region** – Regional comparison (map / bar chart)  
+
+---
+
+## 🧠 Key Insights
+
+- Technology category is the strongest contributor to both sales and profit  
+- The West region leads in overall performance, indicating regional strength  
+- Sales show cyclical peaks in mid-year and year-end periods  
+- Revenue concentration among top products suggests optimization opportunities  
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Google BigQuery** – Data storage, cleaning, and preprocessing  
+- **Tableau Public** – Interactive dashboard design and analysis  
+- **GitHub** – Project documentation and version control  
+
+---
+
+## 📸 Dashboard Preview
+
+![Sales Overview Dashboard](sales_dashboard_screenshot.png)
+
+---
+
+## 🎯 Business Value
+
+This dashboard enables stakeholders to:
+- Monitor core sales and profit KPIs at a glance  
+- Identify high-performing regions and product categories  
+- Understand seasonality and revenue concentration risks  
+- Support data-driven decisions for growth and optimization  
+
+---
+
+## 🚀 Next Steps
+
+- Add profit margin and discount impact analysis  
+- Drill down into customer segments for deeper insights  
+- Extend analysis to forecast future sales trends  
