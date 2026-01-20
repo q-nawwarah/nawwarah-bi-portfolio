@@ -87,7 +87,7 @@ The dataset was **cleaned and prepared in Google BigQuery**, then connected dire
 
 ## 📸 Dashboard Preview
 
-![Sales Overview Dashboard](sales_dashboard_screenshot.png)
+![Sales Overview Dashboard](sales_overview_dashboard.png)
 
 ---
 
