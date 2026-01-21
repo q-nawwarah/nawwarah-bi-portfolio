@@ -31,7 +31,7 @@ The dataset was **cleaned and prepared in Google BigQuery**, then connected dire
 ## 📖 Business Storytelling (What → So What → Now What)
 
 **What**
-- Total Sales and Total Profit show steady growth over time
+- Total Sales show steady growth over time
 - Technology is the primary driver of revenue and profit
 - The West region consistently outperforms other regions
 
