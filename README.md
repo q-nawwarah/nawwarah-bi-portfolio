@@ -102,7 +102,7 @@ Interactive Tableau dashboard analyzing Superstore’s sales performance (2014�
 #### Dataset: Superstore dataset (2014–2017)
 
 ##### About Me
->Nawwarah Yusof< – Data Analyst | Power BI & Business Intelligence
+`Nawwarah Yusof` – Data Analyst | Power BI & Business Intelligence
 Specializing in `data cleaning, analysis, visualization, and executive-ready dashboards` to support decision-making across sales, finance, and public health domains.
 
 
