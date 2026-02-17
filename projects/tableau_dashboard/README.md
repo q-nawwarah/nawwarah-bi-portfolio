@@ -1,35 +1,88 @@
 # Sales Overview Dashboard (Tableau)
-Analyzed Superstore’s sales performance (2014–2017) using Google BigQuery for data prep and Tableau for interactive dashboards, delivering executive-ready insights into revenue, profit, and regional trends.
+
+An interactive **Tableau** dashboard built on data prepared in **Google BigQuery** to analyze **Superstore’s sales performance (2014–2017)** and support data-driven product, regional, and revenue decisions.
+
+---
+
+## Business Problem
+
+Retail leaders need to understand:
+
+* Which **products and regions** drive revenue and profit
+* Whether sales growth is **consistent and sustainable**
+* How **seasonality and product concentration** affect business risk
+
+When this information is scattered across raw tables or spreadsheets, it becomes difficult to spot opportunities or risks. This project simulates how a **BI dashboard** can provide a single, executive-ready view of sales performance.
+
+---
 
 ## Skills Demonstrated
-Google BigQuery • Tableau Public • KPI Analysis • Data Visualization • Business Storytelling
 
-## Business Impact
-- Provides a comprehensive view of sales, profit, order behavior, and regional performance
-- Identifies top-performing products and regions to inform strategy
-- Highlights seasonal patterns and revenue concentration, supporting risk-aware decision-making
-- Enables stakeholders to monitor core KPIs at a glance and make data-driven growth decisions
+**Google BigQuery • Tableau Public • KPI Analysis • Data Visualization • Business Storytelling**
 
-## Technical Highlights
-- Prepared and validated sales data in Google BigQuery
-- Designed KPI-driven, interactive dashboards in Tableau
-- Analyzed sales, profit, order volume, and product/regional performance
-- Applied business storytelling (What → So What → Now What) to translate data into actionable insights
+---
+
+## How the Solution Works
+
+1. **Data Preparation in BigQuery**
+
+   * Cleaned and validated sales data
+   * Structured the dataset for KPI reporting
+
+2. **KPI & Dashboard Design in Tableau**
+
+   * Built KPI cards for Sales, Profit, Orders, AOV, and MoM growth
+   * Created visuals for:
+
+     * Monthly sales trends
+     * Top 10 products
+     * Regional performance
+
+3. **Business Storytelling**
+
+   * Applied **What → So What → Now What** to translate charts into actionable insights
+
+---
+## Dashboard Preview
+![Dashboard](https://public.tableau.com/views/01_salesoverviewdashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Key Insights
-- Technology category drives the highest sales and profit
-- West region consistently outperforms other regions
-- Seasonal sales peaks occur mid-year and year-end
-- Revenue concentration among top products highlights optimization opportunities
+
+* **Technology** is the strongest contributor to both revenue and profit
+* The **West region** consistently outperforms other regions
+* **Sales peak mid-year and at year-end**, showing clear seasonality
+* Revenue is **concentrated in top products**, creating both opportunity and risk
+
+---
+
+## Business Impact
+
+This dashboard helps stakeholders:
+
+* Monitor **core KPIs** at a glance
+* Identify **high-performing regions and products**
+* Understand **seasonality and concentration risk**
+* Make informed decisions about **growth, pricing, and product focus**
+
+It replaces manual reporting with a **clear, interactive view of performance**.
+
+---
 
 ## Outcome
-- Interactive Tableau dashboard showcasing KPIs, monthly trends, top products, and regional analysis
-- Supports data-driven decisions on product focus, regional strategy, and revenue growth
-- Ready for further analysis, including profit margin, discount impact, and forecasting
+
+* **Executive-ready Tableau dashboard** with KPI, trend, product, and regional analysis
+* Supports **data-driven sales and marketing strategy**
+* Provides a foundation for deeper analysis such as margin, discounts, and forecasting
+
+---
 
 ## Dataset
-- Source: Superstore dataset (2014–2017)
-- Data prepared and cleaned in Google BigQuery, connected directly to Tableau
 
-### Author
-Nawwarah Yusof – Data Analyst | Power BI & Business Intelligence
+* **Source:** Superstore dataset (2014–2017)
+* Data cleaned and prepared in **Google BigQuery**, connected to Tableau
+
+---
+
+## Author
+
+**Nawwarah Yusof** – Data Analyst | Power BI & Business Intelligence
