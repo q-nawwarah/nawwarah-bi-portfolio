@@ -43,8 +43,6 @@ When this information is scattered across raw tables or spreadsheets, it becomes
    * Applied **What → So What → Now What** to translate charts into actionable insights
 
 ---
-## Dashboard Preview
-![Dashboard](https://public.tableau.com/views/01_salesoverviewdashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Key Insights
 
