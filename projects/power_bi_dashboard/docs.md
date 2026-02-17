@@ -71,30 +71,26 @@ Top KPIs
 - Detailed variance table highlighting over‑ and under‑performance
 
 ## Dashboard Preview
-![Sales KPI Overview Dashboard](
+![Sales KPI Overview Dashboard](projects/power_bi_dashboard/dashboard_screenshot.png)
 
-🧠 Key Insights
-Revenue performance varied across the year, with both over‑ and under‑target months, providing a more realistic view of execution against plan.
-Strong sales peaks occurred in June, October, and December, indicating seasonal demand patterns.
-Several mid‑year months underperformed targets, highlighting potential pricing, demand, or discounting challenges.
-Profit margin averaged ~14.1%, remaining stable despite revenue volatility.
-💼 Business Value
+## Key Insights
+- Revenue performance varied across the year, with both over‑ and under‑target months, providing a more realistic view of execution against plan.
+- Strong sales peaks occurred in June, October, and December, indicating seasonal demand patterns.
+- Several mid‑year months underperformed targets, highlighting potential pricing, demand, or discounting challenges.
+- Profit margin averaged ~14.1%, remaining stable despite revenue volatility.
+
+## Business Value
 This dashboard supports management and sales leadership by:
+- Improving target accountability Clear month‑level comparison between actuals and targets highlights execution gaps.
+- Enabling faster performance reviews Replaces manual spreadsheets with a single interactive KPI view.
+- Identifying risk periods early Under‑target months are immediately visible, enabling corrective action.
+- Supporting margin awareness Profit and margin trends help balance growth with profitability.
+- Providing a scalable BI foundation The model can be extended to YoY analysis, additional regions, or future targets.
 
-Improving target accountability Clear month‑level comparison between actuals and targets highlights execution gaps.
-
-Enabling faster performance reviews Replaces manual spreadsheets with a single interactive KPI view.
-
-Identifying risk periods early Under‑target months are immediately visible, enabling corrective action.
-
-Supporting margin awareness Profit and margin trends help balance growth with profitability.
-
-Providing a scalable BI foundation The model can be extended to YoY analysis, additional regions, or future targets.
-
-📌 Business Recommendations
-Refine forecasting assumptions for mid‑year months where targets were missed.
-Use seasonal insights to set differentiated targets rather than flat growth expectations.
-Focus growth initiatives on consistently strong markets such as the United States and Canada.
+## Business Recommendations
+- Refine forecasting assumptions for mid‑year months where targets were missed.
+- Use seasonal insights to set differentiated targets rather than flat growth expectations.
+- Focus growth initiatives on consistently strong markets such as the United States and Canada.
 👤 Author
 Nawwarah Yusof Data Analyst | Power BI & Business Intelligence
 
