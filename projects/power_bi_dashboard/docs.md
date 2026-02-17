@@ -71,7 +71,7 @@ Top KPIs
 - Detailed variance table highlighting over‑ and under‑performance
 
 ## Dashboard Preview
-![Sales KPI Overview Dashboard](projects/power_bi_dashboard/dashboard_screenshot.png)
+![Sales KPI Overview Dashboard](https://github.com/nawwarah-analyst/nawwarah-portfolio/blob/main/projects/power_bi_dashboard/dashboard_screenshot.png)
 
 ## Key Insights
 - Revenue performance varied across the year, with both over‑ and under‑target months, providing a more realistic view of execution against plan.
